@@ -1,15 +1,13 @@
 package co.edu.unipiloto;
 
-import androidx.appcompat.app.AppCompatActivity;
-
+import android.app.Activity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Spinner;
 import android.widget.TextView;
 
-public class MainActivity extends AppCompatActivity {
+public class MainActivity extends Activity {
 
-    @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
@@ -21,40 +19,53 @@ public class MainActivity extends AppCompatActivity {
         String prodType = String.valueOf(color.getSelectedItemId());
 
         if (prodType.equals("0")) {
-            String temp = "1. Productos químicos" +
-                    "\n2. Productos de construcción";
-
+            String temp = "1. Carreteras y Autopistas" +
+                    "\n2. Puentes y Túneles" +
+                    "\n3. Sistemas de Transporte Público" +
+                    "\n4. Redes de Agua y Alcantarillado" +
+                    "\n5. Infraestructura Energética";
             list.setText(temp);
         }
         if (prodType.equals("1")) {
-            String temp = "1. Cereales" +
-                    "\n2. Soja" +
-                    "\n3. Legumbres" +
-                    "\n4. Semillas";
+            String temp = "1. Construcción de Museos" +
+                    "\n2. Centros Culturales" +
+                    "\n3. Parques de Diversiones" +
+                    "\n4. Eventos Culturales" +
+                    "\n5. Restauración de Monumentos";
             list.setText(temp);
         }
         if (prodType.equals("2")) {
-            String temp = "1. Agua" +
-                    "\n2. Gasolina" +
-                    "\n3. Petróleo" +
-                    "\n4. Leche" +
-                    "\n5. Miel";
+            String temp = "1. Escuelas y Universidades" +
+                    "\n2. Plataformas Educativas en Línea" +
+                    "\n3. Bibliotecas Públicas" +
+                    "\n4. Laboratorios de Investigación";
             list.setText(temp);
         }
         if (prodType.equals("3")) {
-            String temp = "1. Frutas" +
-                    "\n2. Vegetales" +
-                    "\n3. Flores" +
-                    "\n4. Medicamentos";
+            String temp = "1. Hospitales" +
+                    "\n2. Centros de Salud" +
+                    "\n3. Programas de Vacunación" +
+                    "\n4. Campañas de Conscientización sobre Salud Pública" +
+                    "\n5. Instalaciones de Rehabilitación";
             list.setText(temp);
         }
         if (prodType.equals("4")) {
-            String temp = "1. Madera" +
-                    "\n2. Leña" +
-                    "\n3. Carbón vegetal" +
-                    "\n4. Papel" +
-                    "\n5. Resina";
+            String temp = "1. Redes de Fibra Óptica" +
+                    "\n2. Desarrollo de Centros de Datos" +
+                    "\n3. Creación de Aplicaciones y Software" +
+                    "\n4. Torres de Telecomunicaciones" +
+                    "\n5. Programas de Ciberseguridad";
             list.setText(temp);
         }
+        if (prodType.equals("5")) {
+            String temp = "1. Reforestación" +
+                    "\n2. Parques Eólicos y Plantas Solares" +
+                    "\n3. Sistemas de Gestión de Residios" +
+                    "\n4. Limpieza y Restauración de Ecosistemas" +
+                    "\n5. Campañas de Educación Ambiental";
+            list.setText(temp);
+        }
+
     }
+
 }
