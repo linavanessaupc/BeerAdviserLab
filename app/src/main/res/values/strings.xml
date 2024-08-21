@@ -1,13 +1,13 @@
 <resources>
     <string name="app_name">Beer Adviser</string>
     <string name="find_beer">Buscar</string>
-    <string name="brands">Cero productos seleccionados</string>
+    <string name="brands">Cero proyectos seleccionados</string>
     <string-array name="tipos_cervezas">
-        <item>Mercancía sólida</item>
-        <item>Productos agrícolas</item>
-        <item>Líquidos</item>
-        <item>Productos perecederos</item>
-        <item>Productos forestales</item>
+        <item>Infraestructura</item>
+        <item>Recreación</item>
+        <item>Educación</item>
+        <item>Salud</item>brands
+        <item>Tecnología y Telecomunicaciones</item>
+        <item>Ambiente</item>
     </string-array>
-
 </resources>
